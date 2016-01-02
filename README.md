@@ -1,5 +1,5 @@
 # PhotoDataLab
-#
+
 The idea behind this project is to create a graphic user interface for a series of modules written in Python and used for  scientific data analysis.
 The project philosophy is that it should integrate data importing, treatment and visualization, based on some concepts:
 - The data workflow should be graphically programmed making use of boxes and connectors
@@ -22,11 +22,13 @@ to put in the project right now, and surely there are better plotting softwares,
 I believe the real novelty would be the integration of several simple tools that are generally obtained thorugh the use of
 several softwares in a single one, in the most user-friendly way one can think about, and distribute it as a free software. I don't know what the result will be, but I think it is a good thing to try.
 
+Luca Ravotto (ottovan)
+
 #Updates
+
 I'll use the following space to update what I consider the main goal at the moment:
 - Rewrite in python just one of the simple routines I have developed in bash. Something like Import Data --> Normalize in a point --> Produce a plot of the data (possibly something slightly more elaborated in case it is needed).
 - Build the GUI and try to implement all the functions using this simple sequence
 
 This would allow to focus on various aspects, such as how a module should be written to be properly integrated, before expanding the module library and thus the capabilities of the software.
 
-Luca Ravotto (ottovan)
