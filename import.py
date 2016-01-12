@@ -62,10 +62,11 @@ with open(out_txt, 'w+') as outfile:
         
         infile.seek(0)
 
-        #Find the delimiter in the first numeric line encountered
+        #Find the delimiter in the first data line
         sniffer = csv.Sniffer()
         for num,row in enumerate(infile,1):
-            if re.search('[0-9]',row):
+            #if re.search('[0-9]',row):
+            if num == (line_start + 1):
                 dialect = sniffer.sniff(row)
                 break
         delimiter=dialect.delimiter
@@ -81,5 +82,6 @@ with open(out_txt, 'w+') as outfile:
 
 #Delete temporary files
 os.remove(tmp_txt)
+
 
 
